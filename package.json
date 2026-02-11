@@ -2,11 +2,6 @@
   "name": "basic",
   "description": "Basic setup (React + Vite)",
   "version": "7.1.0",
-  "author": {
-    "name": "Bryntum",
-    "url": "https://bryntum.com",
-    "email": "info@bryntum.com"
-  },
   "license": "commercial",
   "scripts": {
     "dev": "vite",
@@ -18,19 +13,11 @@
     "start": "vite",
     "postinstall": "postinstall"
   },
-  "postinstall": {
-    "node_modules/@bryntum/demo-resources/images/favicon.png": "copy public/favicon.png",
-    "node_modules/@bryntum/gantt/*.css*": "copy public/themes/",
-    "node_modules/@bryntum/gantt/fontawesome/**": "copy public/themes/fontawesome/"
-  },
   "dependencies": {
     "@azure/core-auth": "^1.6.0",
     "@azure/identity": "^4.0.1",
     "@azure/msal-browser": "^4.27.0",
     "@azure/msal-react": "^3.0.23",
-    "@bryntum/demo-resources": "7.1.0",
-    "@bryntum/gantt": "npm:@bryntum/gantt-trial@^7.1.2",
-    "@bryntum/gantt-react": "^7.1.2",
     "axios": "^1.6.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
