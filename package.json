@@ -1,0 +1,68 @@
+{
+  "name": "basic",
+  "description": "Basic setup (React + Vite)",
+  "version": "7.1.0",
+  "author": {
+    "name": "Bryntum",
+    "url": "https://bryntum.com",
+    "email": "info@bryntum.com"
+  },
+  "license": "commercial",
+  "scripts": {
+    "dev": "vite",
+    "dev:frontend": "vite",
+    "dev:backend": "cd server && npm run dev",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "vite",
+    "postinstall": "postinstall"
+  },
+  "postinstall": {
+    "node_modules/@bryntum/demo-resources/images/favicon.png": "copy public/favicon.png",
+    "node_modules/@bryntum/gantt/*.css*": "copy public/themes/",
+    "node_modules/@bryntum/gantt/fontawesome/**": "copy public/themes/fontawesome/"
+  },
+  "dependencies": {
+    "@azure/core-auth": "^1.6.0",
+    "@azure/identity": "^4.0.1",
+    "@azure/msal-browser": "^4.27.0",
+    "@azure/msal-react": "^3.0.23",
+    "@bryntum/demo-resources": "7.1.0",
+    "@bryntum/gantt": "npm:@bryntum/gantt-trial@^7.1.2",
+    "@bryntum/gantt-react": "^7.1.2",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^2.0.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.9.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^20.10.5",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@types/xml2js": "^0.4.14",
+    "@vitejs/plugin-react": "4.3.1",
+    "eslint": "9.9.0",
+    "eslint-plugin-react-hooks": "5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "0.4.9",
+    "globals": "15.9.0",
+    "postinstall": "0.7.4",
+    "sass": "1.81.0",
+    "tsx": "^4.7.0",
+    "typescript": "5.5.3",
+    "typescript-eslint": "8.0.1",
+    "vite": "5.4.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "type": "module"
+}

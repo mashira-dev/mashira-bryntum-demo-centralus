@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- <meta name="description" content="This demo contains the React Gantt chart wrapper and the demo is written in TypeScript"/> -->
+	<meta charset="UTF-8">
+	<!-- <title>Bryntum Gantt - Basic setup (React + Vite)</title> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+	<link rel="stylesheet" data-bryntum-theme />
+</head>
+
+<body>
+	<div id="root"></div>
+	<!-- <script src="./gantt.umd.js"></script> -->
+
+	<!-- <script src="../../ganttchart/public/gantt.umd.js"
+		onload="console.log('Bryntum UMD bundle loaded'); console.log('window.Bryntum:', window.Bryntum);"
+		onerror="console.error('Failed to load Bryntum UMD bundle')"></script> -->
+	<script>
+		// This script is for internal Bryntum examples browser functionality. Should be removed
+		if (window.location.pathname.includes('/examples/') && !/examples\/.*\/dist/.test(window.location.pathname)) {
+			window.location.href = 'dist/' + window.location.search;
+		}
+		else {
+			document.querySelector('link[data-bryntum-theme=""]').href = "themes/svalbard-light.css";
+		}
+	</script>
+	<script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

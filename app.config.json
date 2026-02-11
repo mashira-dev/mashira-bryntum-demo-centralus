@@ -1,0 +1,24 @@
+{
+  "index": {
+    "template": "app.index.ejs",
+    "bundles": [
+      "es6"
+    ]
+  },
+  "title": "Basic setup (React + Vite)",
+  "description": "This demo contains the React Gantt chart wrapper and the demo is written in TypeScript",
+  "source": [
+    "index.html",
+    "package.json",
+    "public/data/launch-saas.json",
+    "src/App.scss",
+    "src/App.tsx",
+    "src/AppConfig.tsx",
+    "src/components/DemoButton.tsx",
+    "src/components/DemoEditor.tsx",
+    "src/main.tsx",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "vite.config.ts"
+  ]
+}

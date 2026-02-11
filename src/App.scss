@@ -1,0 +1,23 @@
+/* FontAwesome is not built-in, but used for icons */
+@import "@bryntum/gantt/fontawesome/css/fontawesome.css";
+@import "@bryntum/gantt/fontawesome/css/solid.css";
+
+/* Bryntum structural CSS */
+@import "@bryntum/gantt/gantt.css";
+
+/* Bryntum theme is included in index.html to enable runtime theme switching, but it could instead be included here if you want to use a single theme */
+/* @import "@bryntum/gantt/svalbard-light.css"; /*
+
+/* Bryntum shared demo styling, not needed in your app */
+@import "@bryntum/demo-resources/scss/example.scss";
+
+.small-text {
+    font-size : .7em;
+}
+
+.yes-button,
+.no-button {
+    flex    : 1;
+    border  : none;
+    outline : none;
+}
